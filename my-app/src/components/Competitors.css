@@ -1,0 +1,101 @@
+
+.competitor-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.competitor-card {
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid #e5e7eb;
+  position: relative;
+  overflow: hidden;
+}
+
+.competitor-card::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 120px;
+  height: 120px;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.competitor-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.competitor-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #111827;
+  position: relative;
+  z-index: 1;
+}
+
+/* .competitor-info p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  position: relative;
+  z-index: 1;
+}
+
+.competitor-info strong {
+  color: #2563eb;
+  font-weight: 600;
+} */
+
+.competitor-info p {
+  margin: 0.4rem 0;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.competitor-info strong {
+  min-width: 130px;
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.divider {
+  margin: 0.8rem 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+.competitor-card ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 1;
+}
+
+.competitor-card li {
+  margin: 0.3rem 0;
+  color: #374151;
+}
+
+.badge {
+  display: inline-block;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: 8px;
+  margin-left: 0.5rem;
+}
+
+ 

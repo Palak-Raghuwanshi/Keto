@@ -1,0 +1,105 @@
+
+
+
+.founders-container {
+  padding: 40px;
+  background-color: #f7fafc; 
+  text-align: center;
+}
+
+.founders-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2d3748; 
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.founders-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.founder-card {
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  padding: 20px;
+}
+
+.founder-card:hover {
+  transform: translateY(-10px); 
+}
+
+.founder-image-container {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.founder-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.founder-info {
+  padding: 10px;
+  text-align: left;
+}
+
+.founder-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 8px;
+}
+
+.founder-position {
+  font-size: 1.1rem;
+  color: #4a5568;
+  margin-bottom: 10px;
+}
+
+.founder-description {
+  font-size: 1rem;
+  color: #718096;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-link {
+  font-size: 1rem;
+  color: #3182ce;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  
+}
+
+.social-link:hover {
+  color: #2b6cb0; 
+}
+
+@media (max-width: 768px) {
+  .founders-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .founder-card {
+    width: 90%;
+  }
+}

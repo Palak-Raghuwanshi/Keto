@@ -1,0 +1,152 @@
+
+
+
+
+
+.vault-container {
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.vault-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+   margin-top: 1px; 
+}
+
+.vault-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.vault-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 22px;
+}
+
+.vault-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.vault-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.file-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.file-icon {
+  font-size: 2rem;
+  padding: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.file-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0;
+  color: #222;
+}
+
+.file-description {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 18px;
+  min-height: 40px;
+  line-height: 1.4;
+}
+
+.file-link {
+  display: inline-block;
+  padding: 9px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  color: white;
+}
+
+
+.pdf .file-icon,
+.pdf .file-link {
+  background: #6bc7d9;
+}
+.pdf .file-link:hover {
+  background: #5d97b4;
+}
+
+.word .file-icon,
+.word .file-link {
+  background: #0078d4;
+}
+.word .file-link:hover {
+  background: #005ea6;
+}
+
+.excel .file-icon,
+.excel .file-link {
+  background: #28a745;
+}
+.excel .file-link:hover {
+  background: #1f7c34;
+}
+
+.ppt .file-icon,
+.ppt .file-link {
+  background: #ff8c00;
+}
+.ppt .file-link:hover {
+  background: #cc6f00;
+}
+
+.image .file-icon,
+.image .file-link {
+  background: #9b59b6;
+}
+.image .file-link:hover {
+  background: #7d3c98;
+}
+
+.zip .file-icon,
+.zip .file-link {
+  background: #34495e;
+}
+.zip .file-link:hover {
+  background: #22313f;
+}
+
+.other .file-icon,
+.other .file-link {
+  background: #777;
+}
+.other .file-link:hover {
+  background: #555;
+}
+
+.vault-empty {
+  text-align: center;
+  font-size: 1rem;
+  color: #777;
+  padding: 20px;
+}
+
